@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2975F35B22992A51006FEC1C /* SunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2975F35A22992A51006FEC1C /* SunViewController.swift */; };
+		29A8A8732299EC2600748CE3 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8A8722299EC2600748CE3 /* testViewController.swift */; };
 		29B35EB92292B65600E3A89C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B35EB82292B65600E3A89C /* AppDelegate.swift */; };
 		29B35EBB2292B65600E3A89C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B35EBA2292B65600E3A89C /* ViewController.swift */; };
 		29B35EBE2292B65600E3A89C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B35EBC2292B65600E3A89C /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2975F35A22992A51006FEC1C /* SunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunViewController.swift; sourceTree = "<group>"; };
+		29A8A8722299EC2600748CE3 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		29B35EB52292B65600E3A89C /* NC1-Moved.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NC1-Moved.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B35EB82292B65600E3A89C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29B35EBA2292B65600E3A89C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,9 +58,11 @@
 		29B35EB72292B65600E3A89C /* NC1-Moved */ = {
 			isa = PBXGroup;
 			children = (
+				2975F35A22992A51006FEC1C /* SunViewController.swift */,
 				29B35EB82292B65600E3A89C /* AppDelegate.swift */,
 				29B35EBA2292B65600E3A89C /* ViewController.swift */,
 				29B35EBC2292B65600E3A89C /* Main.storyboard */,
+				29A8A8722299EC2600748CE3 /* testViewController.swift */,
 				29B35EBF2292B65700E3A89C /* Assets.xcassets */,
 				29B35EC12292B65700E3A89C /* LaunchScreen.storyboard */,
 				29B35EC42292B65700E3A89C /* Info.plist */,
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B35EBB2292B65600E3A89C /* ViewController.swift in Sources */,
+				2975F35B22992A51006FEC1C /* SunViewController.swift in Sources */,
+				29A8A8732299EC2600748CE3 /* testViewController.swift in Sources */,
 				29B35EB92292B65600E3A89C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
