@@ -1,25 +1,22 @@
 //
-//  ViewController.swift
+//  JumpingViewController.swift
 //  NC1-Moved
 //
-//  Created by Khairani Ummah on 20/05/19.
+//  Created by Khairani Ummah on 26/05/19.
 //  Copyright © 2019 Khairani Ummah. All rights reserved.
 //
 
 import UIKit
-import CoreMotion
-import Dispatch
 
-class ViewController: UIViewController {
+class JumpingViewController: UIViewController {
 
-    @IBOutlet weak var walk: UIImageView!
-    
-    var walkImages: [UIImage] = []
+    @IBOutlet weak var jumpView: UIImageView!
+    var jumpImages: [UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        walkImages = createImageArray(total: 18, imagePrefix: "walk-")
-        animate(imageView: walk, images: walkImages)
+        jumpImages = createImageArray(total: 17, imagePrefix: "a")
+        animate(imageView: jumpView, images: jumpImages)
         // Do any additional setup after loading the view.
         
         
@@ -43,17 +40,5 @@ class ViewController: UIViewController {
         imageView.startAnimating()
     }
     
-    func stopWalking(){
-        
-    }
     
-    func isWalking() -> Bool {
-        // if
-        return true
-    }
-    
-    
-    
-
 }
-

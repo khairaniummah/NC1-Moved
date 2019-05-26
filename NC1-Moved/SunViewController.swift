@@ -20,24 +20,24 @@ class SunViewController: UIViewController {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(appMovedToForeground), name: UIApplication.didBecomeActiveNotification, object: nil)
         
-        
-//        iniApa()
-        
-        
-       
-    }
-    func iniApa(){
-        SunView.layer.cornerRadius = (SunView.frame.width/2)
-        SunView.layer.borderColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
-        SunView.layer.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        SunView.layer.borderWidth = 3.0
-        print("idih")
     }
     
-    func iniLoh(){
-        SunView.layer.cornerRadius = (SunView.frame.width/2)
+    private func moveToWalkingPage() {
+        //        let vc:UIViewController = WalkingViewController()
+        //        self.navigationController?.pushViewController(vc!, animated: true)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let secondViewController = storyboard.instantiateViewController(withIdentifier: "WalkingViewController") as UIViewController
+        present(secondViewController, animated: true, completion: nil)
+//        self.navigationController?.pushViewController(secondViewController, animated: true)
+//        navigationController?.pushViewController(secondViewController, animated: true)
+    }
+    
+    func challengeOneAccomplished(){
+        brightnessAccomplished = true
         SunView.layer.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
         print("WOHOWWW")
+        moveToWalkingPage()
     }
     
     func getCurrentBrightness() -> CGFloat {
@@ -53,12 +53,12 @@ class SunViewController: UIViewController {
         
         if currentBrightness == 1.0 {
             print("YOU MADE IT")
-            brightnessAccomplished = true
-//            iniLoh()
+            challengeOneAccomplished()
         }
         else {
             print("silahkan coba lagi")
             brightnessAccomplished = false
+            SunView.layer.backgroundColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
 //            iniApa()
         }
         
@@ -70,7 +70,7 @@ class SunViewController: UIViewController {
     func createSun(currentBright: CGFloat) {
         let c = view.center     // Get the center point. Position views around this point.
         let r: CGFloat = 60    // Radius for the circle.
-        
+        SunView.layer.backgroundColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
         //        let start = CGPoint(x: view.center.x, y: view.center.y)
         let sun = CGRect(x: 0, y: 0, width: 50, height: 50)
         let sunView = UIView(frame: sun)
